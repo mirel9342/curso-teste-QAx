@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230906 16:13:30.068" rpa="false" schemaversion="4">
+<suite id="s1" name="Teste" source="C:\QAx\teste.robot">
+<test id="s1-t1" name="Pesquisa no Site" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230906 16:13:33.527" level="INFO">Opening browser 'Chrome' to base url 'https://www.exemplo.com'.</msg>
+<msg timestamp="20230906 16:14:17.777" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230906 16:14:17.809" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.142 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EEA813+48355]
+	(No symbol) [0x00E7C4B1]
+	(No symbol) [0x00D85358]
+	(No symbol) [0x00DA61AC]
+	(No symbol) [0x00DA1EF3]
+	(No symbol) [0x00DA0579]
+	(No symbol) [0x00DD0C55]
+	(No symbol) [0x00DD093C]
+	(No symbol) [0x00DCA536]
+	(No symbol) [0x00DA82DC]
+	(No symbol) [0x00DA93DD]
+	GetHandleVerifier [0x0114AABD+2539405]
+	GetHandleVerifier [0x0118A78F+2800735]
+	GetHandleVerifier [0x0118456C+2775612]
+	GetHandleVerifier [0x00F751E0+616112]
+	(No symbol) [0x00E85F8C]
+	(No symbol) [0x00E82328]
+	(No symbol) [0x00E8240B]
+	(No symbol) [0x00E74FF7]
+	BaseThreadInitThunk [0x755300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207AEE+238]
+</msg>
+<status status="FAIL" starttime="20230906 16:13:33.527" endtime="20230906 16:14:19.747"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=search-box</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230906 16:14:19.844" endtime="20230906 16:14:19.866"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=search-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230906 16:14:19.870" endtime="20230906 16:14:19.870"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${SEARCH_TERM}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230906 16:14:19.873" endtime="20230906 16:14:19.873"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20230906 16:14:19.873" endtime="20230906 16:14:19.873"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230906 16:14:19.873" endtime="20230906 16:14:19.873"/>
+</kw>
+<status status="FAIL" starttime="20230906 16:13:33.512" endtime="20230906 16:14:19.951">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.142 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EEA813+48355]
+	(No symbol) [0x00E7C4B1]
+	(No symbol) [0x00D85358]
+	(No symbol) [0x00DA61AC]
+	(No symbol) [0x00DA1EF3]
+	(No symbol) [0x00DA0579]
+	(No symbol) [0x00DD0C55]
+	(No symbol) [0x00DD093C]
+	(No symbol) [0x00DCA536]
+	(No symbol) [0x00DA82DC]
+	(No symbol) [0x00DA93DD]
+	GetHandleVerifier [0x0114AABD+2539405]
+	GetHandleVerifier [0x0118A78F+2800735]
+	GetHandleVerifier [0x0118456C+2775612]
+	GetHandleVerifier [0x00F751E0+616112]
+	(No symbol) [0x00E85F8C]
+	(No symbol) [0x00E82328]
+	(No symbol) [0x00E8240B]
+	(No symbol) [0x00E74FF7]
+	BaseThreadInitThunk [0x755300C9+25]
+	RtlGetAppContainerNamedObjectPath [0x77207B1E+286]
+	RtlGetAppContainerNamedObjectPath [0x77207AEE+238]
+</status>
+</test>
+<doc>Teste de pesquisa no site</doc>
+<status status="FAIL" starttime="20230906 16:13:30.090" endtime="20230906 16:14:20.084"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
